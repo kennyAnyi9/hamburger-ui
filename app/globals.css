@@ -74,3 +74,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* consistents */
+
+.thin_border {
+  @apply border border-gray-600 border-opacity-25;
+}
+
+.hero_description {
+  @apply text-lg text-gray-600 font-normal;
+}
+
+.button_class_default {
+  @apply bg-gray-700 backdrop-blur-2xl backdrop-filter rounded-full dark:bg-gray-500;
+}
