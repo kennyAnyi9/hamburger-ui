@@ -10,7 +10,8 @@ export function SwitchDemo() {
   return (
     <div className="flex items-center space-x-2">
       <Switch
-        id="airplane-mode"
+        id="toggle mode"
+        className=""
         onClick={() => {
           if (mode == true) {
             toggleMode(false);
