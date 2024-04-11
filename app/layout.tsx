@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 import { ThemeProvider } from "@/components/themes/theme-provider";
-import { DesktopNavigation } from "@/lib/exports";
-
-const inter = Inter({ subsets: ["latin"] });
+import { DesktopNavigation, Footer } from "@/lib/exports";
+import { cn } from "@/lib/utils";
+import { fontSans } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "Hamburger UI",
@@ -18,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={cn(" font-sans antialiased", fontSans.variable)}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -27,6 +26,7 @@ export default function RootLayout({
         >
           <DesktopNavigation />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
