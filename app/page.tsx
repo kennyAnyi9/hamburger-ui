@@ -18,13 +18,13 @@ export default function Home() {
       <section className="h-fit max-w-5xl flex flex-col items-center gap-5 ">
         <SwitchDemo />
         <a
-          href="https://beta.tailus.io/demo"
+          href="#"
           className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-[--annonce-border-radius] border-[--ui-light-border-color] hover:border-[--ui-light-border-hover-color] dark:border-[--ui-dark-border-color] dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2"
         >
-          <span className="block text-sm px-2 py-0.5 rounded-[calc(var(--annonce-border-radius)-0.375rem)] text-white bg-primary-600">
+          <span className="block text-xs px-2 py-0.5 rounded-[calc(var(--annonce-border-radius)-0.375rem)] text-white bg-primary-600">
             New
           </span>
-          <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex gap-6">
+          <span className="text-xs font-medium text-gray-700 dark:text-gray-300 flex gap-6">
             Introducing Skeleton UI React !
             <div className="flex items-center -space-x-3 group-hover:-translate-x-1 transition-transform duration-300">
               <span className="w-2.5 translate-y-[-0.3px] -translate-x-px opacity-0 h-[1.5px] rounded bg-gray-950 dark:bg-white origin-left scale-x-0 transition duration-300 group-hover:opacity-100 group-hover:scale-x-100"></span>
