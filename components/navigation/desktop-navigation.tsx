@@ -16,7 +16,7 @@ export default function DesktopNavigation() {
   return (
     <header className="hidden border-b h-16 lg:flex justify-between items-center px-24 ">
       <section className="inline-flex gap-3">
-        <div className="my-auto ">
+        <div className="inline-flex my-auto font-bold gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -28,9 +28,11 @@ export default function DesktopNavigation() {
             stroke-linecap="round"
             stroke-linejoin="round"
           >
-            <rect width="14" height="6" x="5" y="12" rx="2" />
-            <rect width="10" height="6" x="7" y="2" rx="2" />
-            <path d="M2 22h20" />
+            <path d="M21 4H3" />
+            <path d="M18 8H6" />
+            <path d="M19 12H9" />
+            <path d="M16 16h-6" />
+            <path d="M11 20H9" />
           </svg>
         </div>
         <Version />
