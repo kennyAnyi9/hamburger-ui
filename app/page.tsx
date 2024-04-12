@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
               </div>
               <pre className="bg-background">
-                <code className="font-mono text-xs p-5">
+                <code className="font-mono text-xs ">
                   <SyntaxHighlighter
                     language="typescript"
                     showLineNumbers={true}
