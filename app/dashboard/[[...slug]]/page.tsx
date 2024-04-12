@@ -1,4 +1,5 @@
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { CodePreviewSwitcher, InstallationSnippet } from "@/lib/exports";
 import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
@@ -13,18 +14,24 @@ export default function page() {
             Docs
           </div>
           <ChevronRightIcon className="h-4 w-4" />
-          <div className="font-medium text-foreground">Hambuger</div>
+          <div className="font-medium text-foreground">Basic Menu</div>
         </div>
         <div className="space-y-2">
           <h1 className={cn("scroll-m-20 text-4xl font-bold tracking-tight")}>
-            Hamburger UI
+            Basic Menu
           </h1>
         </div>
 
-        <div className="pb-12 pt-8"></div>
+        <div className="pb-12 pt-8">
+          <h1>Installation</h1>
+          <InstallationSnippet />
+        </div>
+        <div className="pb-12 pt-8">
+          <CodePreviewSwitcher />
+        </div>
       </div>
 
-      <div className="hidden text-sm xl:block">
+      {/* <div className="hidden text-sm xl:block">
         <div className="sticky top-16 -mt-10 pt-4">
           <ScrollArea className="pb-10">
             <div className="sticky top-16 -mt-10 h-[calc(100vh-3.5rem)] py-12">
@@ -32,7 +39,7 @@ export default function page() {
             </div>
           </ScrollArea>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
