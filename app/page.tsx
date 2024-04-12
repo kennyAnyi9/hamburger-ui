@@ -86,7 +86,7 @@ export default function Home() {
 
       {/* second section */}
       <section className="w-screen">
-        <div className="overflow-hidden mx-auto w-4/5 p-5 border bg-white dark:bg-transparent rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+        <div className="overflow-hidden mx-auto w-11/12 lg:w-4/5 p-5 border bg-white dark:bg-transparent rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
           {/* <div className="flex justify-between items-center border-b mb-2 border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] w-full">
             <div className="flex   gap-2 py-6 *:size-2.5 *:rounded-full px-[--card-padding]">
               <div className="bg-[#f87171]"></div>
