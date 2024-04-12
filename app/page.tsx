@@ -14,7 +14,7 @@ const backgroundColor = {
 
 export default function Home() {
   return (
-    <main className="overflow-hidden flex min-h-screen flex-col items-center justify-between px-5 gap-20  md:px-24  pt-24">
+    <main className="overflow-hidden flex min-h-screen flex-col items-center justify-between px-5 gap-20  md:px-24  pt-10">
       <section className="h-fit max-w-5xl flex flex-col items-center gap-5 ">
         <SwitchDemo />
         <a
@@ -59,7 +59,7 @@ export default function Home() {
           href="#"
           // className="flex justify-center items-center p-[3px] bg-gray-200 rounded-xl"
         >
-          <Button className="button_class_default p-6 inline-flex gap-1">
+          <Button className="button_class_default p-3 md:p-6 inline-flex gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

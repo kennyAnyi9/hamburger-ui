@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import { ThemeProvider } from "@/components/themes/theme-provider";
-import { DesktopNavigation, Footer } from "@/lib/exports";
+import { DesktopNavigation, Footer, MobileNavbar } from "@/lib/exports";
 import { cn } from "@/lib/utils";
 import { fontSans } from "@/lib/fonts";
 
@@ -25,6 +25,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <DesktopNavigation />
+          <MobileNavbar />
           {children}
           <Footer />
         </ThemeProvider>
