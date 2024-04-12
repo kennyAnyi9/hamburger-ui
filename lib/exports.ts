@@ -8,6 +8,7 @@ import { CanvasLater } from "@/components/landing/canvas-later";
 import DesktopNavigation from "@/components/navigation/desktop-navigation";
 import { Footer } from "@/components/navigation/footer";
 import MobileNavbar from "@/components/navigation/mobile-navigation";
+import { DropDown } from "@/components/navigation/mobile-side-bar";
 import { ModeToggle } from "@/components/themes/theme-toggle";
 import { Version } from "@/components/version";
 
@@ -24,4 +25,5 @@ export {
   Canvas,
   CanvasLater,
   MobileNavbar,
+  DropDown,
 };
