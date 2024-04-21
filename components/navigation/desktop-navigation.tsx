@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "../ui/badge";
-import { Version } from "@/lib/exports";
+import { ModeToggle, Version } from "@/lib/exports";
 import { CalendarDays, ExternalLink } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
@@ -14,34 +14,29 @@ import Link from "next/link";
 
 export default function DesktopNavigation() {
   return (
-    <header className="hidden border-b h-16 lg:flex justify-between items-center px-24 ">
+    <header className="hidden border-b h-12 lg:flex justify-between items-center px-10 ">
       <section className="inline-flex gap-3">
         <div className="inline-flex my-auto font-bold gap-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M21 4H3" />
-            <path d="M18 8H6" />
-            <path d="M19 12H9" />
-            <path d="M16 16h-6" />
-            <path d="M11 20H9" />
-          </svg>
+          <h1 className="text-lg inline-flex justify-center items-center gap-2 font-normal text-gray-800 dark:text-gray-200">
+            {" "}
+            <span className="inline-flex justify-center items-center font-bold rounded-lg py-0.5 px-2 text-gray-100 dark:text-gray-800  bg-black dark:bg-white ">
+              UI
+            </span>
+            Hamburger
+          </h1>
         </div>
         <Version />
-        <div className="inline-flex gap-3 my-auto text-sm">
-          <Link href="/dashboard">Docs</Link>
-          <Link href="/dashboard">Components</Link>
+        <div className="inline-flex gap-3 my-auto  ">
+          <Link href="/dashboard" className="text-sm text-opacity-25">
+            Docs
+          </Link>
+          <Link href="/dashboard" className="text-sm text-opacity-25">
+            Components
+          </Link>
         </div>
       </section>
-      <section>
+      <section className="flex justify-center items-center my-auto">
+        <ModeToggle />
         <HoverCard>
           <HoverCardTrigger asChild>
             <Button variant="link">Github</Button>

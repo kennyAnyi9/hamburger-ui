@@ -11,10 +11,8 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
-  SheetDescription,
   SheetFooter,
   SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
 import { DocsSidebarNavItems } from "../docs/side-bar";
