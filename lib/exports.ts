@@ -5,6 +5,7 @@ import CodePreviewSwitcher from "@/components/docs/tabs";
 import BasicMenu from "@/components/hamburgers/basic-menu";
 import { Canvas } from "@/components/landing/canvas";
 import { CanvasLater } from "@/components/landing/canvas-later";
+import { Steps } from "@/components/landing/steps";
 import DesktopNavigation from "@/components/navigation/desktop-navigation";
 import { Footer } from "@/components/navigation/footer";
 import MobileNavbar from "@/components/navigation/mobile-navigation";
@@ -26,4 +27,5 @@ export {
   CanvasLater,
   MobileNavbar,
   DropDown,
+  Steps,
 };

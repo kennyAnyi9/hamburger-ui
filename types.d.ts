@@ -7,6 +7,10 @@ export interface NavItem {
   label?: string;
 }
 
+export interface menuItem {
+  items?: string[];
+}
+
 export interface NavItemWithChildren extends NavItem {
   items: NavItemWithChildren[];
 }

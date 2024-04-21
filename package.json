@@ -19,6 +19,7 @@
     "@radix-ui/react-switch": "^1.0.3",
     "@radix-ui/react-tabs": "^1.0.4",
     "@react-three/fiber": "^8.16.1",
+    "@tabler/icons-react": "^3.2.0",
     "@tailus/themer": "^0.0.5",
     "@types/react-syntax-highlighter": "^15.5.11",
     "class-variance-authority": "^0.7.0",
