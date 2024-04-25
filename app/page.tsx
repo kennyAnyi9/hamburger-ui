@@ -13,8 +13,8 @@ const backgroundColor = {
 
 export default function Home() {
   return (
-    <main className="relative top-16 overflow-hidden flex min-h-screen flex-col items-center justify-between px-5 gap-20  md:px-24  pt-20">
-      <section className="h-fit max-w-5xl flex flex-col items-center gap-5 ">
+    <main className="relative  lg:top-16 overflow-hidden flex min-h-screen flex-col items-center justify-between px-5 gap-20  md:px-24  pt-20">
+      <section className="h-fit max-w-6xl flex flex-col items-center gap-5 ">
         <a
           href="#"
           className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-[--annonce-border-radius] border-[--ui-light-border-color] hover:border-[--ui-light-border-hover-color] dark:border-[--ui-dark-border-color] dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2"
@@ -45,7 +45,7 @@ export default function Home() {
           </span>
         </a>
 
-        <h1 className="font-semibold text-opacity-50 text-4xl text-center md:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-gray-950 to-gray-200">
+        <h1 className="font-semibold text-opacity-50 text-3xl text-center md:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-gray-950 to-gray-200">
           Customizable mobile menus
         </h1>
         <p className="max-w-2xl text-center hero_description">
