@@ -14,9 +14,9 @@ import Link from "next/link";
 
 export default function DesktopNavigation() {
   return (
-    <header className="hidden border-b h-16 lg:flex justify-between items-center px-8 ">
+    <header className="hidden border-b h-16 lg:flex justify-between items-center px-8 fixed bg-transparent backdrop-blur-2xl z-20 w-screen">
       <section className="inline-flex gap-3">
-        <div className="inline-flex my-auto font-bold gap-2">
+        <div className="inline-flex my-auto font-bold gap-2 ">
           <Link href="/">
             <h1 className="text-lg inline-flex justify-center items-center gap-2 font-normal text-gray-800 dark:text-gray-200">
               {" "}
