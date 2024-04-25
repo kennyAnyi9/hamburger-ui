@@ -2,10 +2,10 @@ import React from "react";
 
 export default function CodePreviewSnippet() {
   return (
-    <div className="border rounded-md bg-gray-800 p-5 w-fit">
+    <div className="border rounded-md  dark:bg-transparent bg-black p-5 w-fit">
       <div className="w-full inline-flex justify-between"></div>
       <code>
-        <pre className="font-mono text-sm">
+        <pre className="font-mono text-sm text-white">
           {`
 "use client";
 import Link from "next/link";
