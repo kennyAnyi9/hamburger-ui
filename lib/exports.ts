@@ -1,5 +1,6 @@
 import CodePreviewSnippet from "@/components/docs/code-preview-snippet";
 import InstallationSnippet from "@/components/docs/installation-snippet";
+import Preview from "@/components/docs/preview";
 import { DocsSidebarNav } from "@/components/docs/side-bar";
 import CodePreviewSwitcher from "@/components/docs/tabs";
 import BasicMenu from "@/components/hamburgers/basic-menu";
@@ -28,4 +29,5 @@ export {
   MobileNavbar,
   DropDown,
   Steps,
+  Preview,
 };
