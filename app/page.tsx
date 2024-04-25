@@ -4,15 +4,16 @@ import { BasicMenu, Canvas, Steps } from "@/lib/exports";
 import Link from "next/link";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { monokai } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import Balancer from "react-wrap-balancer";
 
 // TODO:move to constants.ts and import it here
 const backgroundColor = {
-  backgroundColor: "#030712",
+  backgroundColor: "#1D202A",
 };
 
 export default function Home() {
   return (
-    <main className="overflow-hidden flex min-h-screen flex-col items-center justify-between px-5 gap-20  md:px-24  pt-20">
+    <main className="relative top-16 overflow-hidden flex min-h-screen flex-col items-center justify-between px-5 gap-20  md:px-24  pt-20">
       <section className="h-fit max-w-5xl flex flex-col items-center gap-5 ">
         <a
           href="#"
@@ -44,19 +45,21 @@ export default function Home() {
           </span>
         </a>
 
-        <h1 className="font-semibold text-opacity-50 text-5xl text-center md:text-7xl text-transparent bg-clip-text bg-gradient-to-t from-gray-950 to-gray-200">
-          Humburger UI
+        <h1 className="font-semibold text-opacity-50 text-4xl text-center md:text-5xl text-transparent bg-clip-text bg-gradient-to-t from-gray-950 to-gray-200">
+          Customizable mobile menus
         </h1>
         <p className="max-w-2xl text-center hero_description">
-          A collection of pre-built, responsive mobile dropdown menus designed
-          specifically for your React and Next.js projects. Simply copy and
-          paste the code to enhance your app's navigation.
+          <Balancer ratio={0.43} preferNative={false}>
+            Discover a curated collection of responsive mobile navigation menus
+            designed to streamline your app's navigation. Simply copy and paste
+            the code in your projects.
+          </Balancer>
         </p>
         <Link
           href="#"
           // className="flex justify-center items-center p-[3px] bg-gray-200 rounded-xl"
         >
-          <Button className="button_class_default p-3 md:p-5 inline-flex gap-1">
+          <Button className="button_class_default p-3 md:p-4 inline-flex gap-1">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -148,7 +151,7 @@ export default function Home() {
                       ></path>
                     </svg>
                     <span className="font-mono text-xs">
-                      components/hamburger.tsx
+                      components/ui/BasicMenu.tsx
                     </span>
                   </div>
 
@@ -180,31 +183,40 @@ export default function Home() {
                     {/** Removed unnecessary divs and comments */}
                     {`"use client";
 import React, { useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import {Sheet,SheetContent,SheetFooter,SheetHeader,SheetTrigger} from "@/components/ui/sheet";
+import Link from "next/link";
+import { ModeToggle } from "@/lib/exports";
+
 
 export default function BasicMenu() {
   return (
     <Sheet>
-      <SheetTrigger>Open</SheetTrigger>
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
-          <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </SheetDescription>
+      <SheetTrigger>
+        <MenuIcon/>
+      </SheetTrigger>
+      <SheetContent className="w-full">
+        <SheetHeader className="-mt-2">
+          <Link href="/">
+           Logo
+          </Link>
         </SheetHeader>
+        <div className="flex flex-col gap-2 mt-10">
+          {menuNavigationLinks.map(({ href, text }) => (
+            <Link
+              key={href}
+              className="text-xl font-semibold text-foreground hover:text-foreground/80"
+              href={href}
+            >
+              {text}
+            </Link>
+          ))}
+        </div>
+       
       </SheetContent>
     </Sheet>
   );
 }
+
 `}
                   </SyntaxHighlighter>
                 </code>
