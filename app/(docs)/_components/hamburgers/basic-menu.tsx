@@ -1,20 +1,24 @@
 "use client";
-import React, { useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
-import { ModeToggle } from "@/lib/exports";
-import { MenuLeft, MenuRight } from "../../../../../components/ui/icons";
+
 import { motion, useReducedMotion } from "framer-motion";
 
-const menuNavigationLinks = [
+interface NavigationLink {
+  href: string;
+  text: string;
+}
+/* start by raplacing these with your menu items and links */
+const menuNavigationLinks: NavigationLink[] = [
   { href: "/", text: "Homeward Bound" },
-  { href: "/", text: "Doc's Orders" },
-  { href: "/", text: " Big Reveal" },
-  { href: "/", text: "Got You Covered" },
-  { href: "/", text: "News & Brews ☕️" },
-  { href: "/", text: "Let's Chat! " },
-  { href: "/", text: "Showtime! ✨" },
-  { href: "/", text: "Meet Masterminds " },
+  { href: "/docs", text: "Doc's Orders" },
+  { href: "/about", text: "The Big Reveal" },
+  { href: "/services", text: "We Got You Covered" },
+  { href: "/blog", text: "Fresh News & Brews ☕️" },
+  { href: "/contact", text: "Let's Chat! " },
+  { href: "/portfolio", text: "Showtime! ✨" },
+  { href: "/team", text: "Meet the Masterminds " },
+  // ... other links
 ];
 
 export default function BasicMenu() {
@@ -22,7 +26,7 @@ export default function BasicMenu() {
   return (
     <Sheet>
       <SheetTrigger>
-        <MenuLeft />
+        <MenuJustified />
       </SheetTrigger>
       <SheetContent className="w-full" side={"right"}>
         <Link href="/">
@@ -76,3 +80,25 @@ export default function BasicMenu() {
     </Sheet>
   );
 }
+
+const MenuJustified = ({ className, ...rest }: any) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className={className}
+      {...rest}
+    >
+      <line x1="3" x2="21" y1="6" y2="6" />
+      <line x1="3" x2="21" y1="12" y2="12" />
+      <line x1="3" x2="21" y1="18" y2="18" />
+    </svg>
+  );
+};
