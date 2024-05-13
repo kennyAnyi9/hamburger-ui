@@ -1,6 +1,6 @@
 import React from "react";
 import { Badge } from "../ui/badge";
-import { ModeToggle, Version } from "@/lib/exports";
+import { BasicMenu, MobileNavbar, ModeToggle, Version } from "@/lib/exports";
 import { CalendarDays, ExternalLink } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";

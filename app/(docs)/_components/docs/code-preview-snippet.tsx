@@ -1,31 +1,35 @@
-"use client";
+import React from "react";
+import { CodeSnippet } from "./installation-snippet";
+
+export default function BasicMenuSnippet() {
+  return (
+    <CodeSnippet>
+      {`"use client";
 import React, { useState } from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Link from "next/link";
 import { ModeToggle } from "@/lib/exports";
-import { MenuRight } from "../ui/icons";
+import { MenuRight } from "../../../../../components/ui/icons";
 
 const menuNavigationLinks = [
   {
-    href: `/`,
+    href: "/
+        ",
     text: "Home",
   },
   {
-    href: `/docs`,
+    href: " /
+        docs",
     text: "Docs",
   },
   {
-    href: `/docs`,
+    href: " /
+        docs",
     text: "about",
   },
   {
-    href: `/docs`,
+    href: " /
+        docs",
     text: "services",
   },
 ];
@@ -60,5 +64,9 @@ export default function BasicMenu() {
         </div>
       </SheetContent>
     </Sheet>
+  );
+}
+`}
+    </CodeSnippet>
   );
 }

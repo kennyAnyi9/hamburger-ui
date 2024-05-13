@@ -15,7 +15,7 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "../ui/sheet";
-import { DocsSidebarNavItems } from "../docs/side-bar";
+import { DocsSidebarNavItems } from "../../app/(docs)/_components/docs/side-bar";
 
 export interface DocsSidebarNavProps {
   items: SidebarNavItem[];

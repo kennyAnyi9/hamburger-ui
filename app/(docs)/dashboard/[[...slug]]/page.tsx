@@ -1,4 +1,3 @@
-import Usage from "@/components/docs/component-usage";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   BasicMenu,
@@ -11,6 +10,7 @@ import { cn } from "@/lib/utils";
 import { ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Usage from "../../_components/docs/component-usage";
 
 export default function page() {
   return (
