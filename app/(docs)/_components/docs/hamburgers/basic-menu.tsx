@@ -9,15 +9,12 @@ import { motion, useReducedMotion } from "framer-motion";
 const menuNavigationLinks = [
   { href: "/", text: "Homeward Bound" },
   { href: "/", text: "Doc's Orders" },
-  { href: "/", text: "The Big Reveal" },
-  { href: "/", text: "We Got You Covered" },
-  { href: "/", text: "Fresh News & Brews ☕️" },
+  { href: "/", text: " Big Reveal" },
+  { href: "/", text: "Got You Covered" },
+  { href: "/", text: "News & Brews ☕️" },
   { href: "/", text: "Let's Chat! " },
   { href: "/", text: "Showtime! ✨" },
-  { href: "/", text: "Meet the Masterminds " },
-  { href: "/", text: "Unlock Your Potential " },
-  { href: "/", text: "Hear What They Say " },
-  { href: "/", text: "Got Questions?  We Got Answers!" },
+  { href: "/", text: "Meet Masterminds " },
 ];
 
 export default function BasicMenu() {
