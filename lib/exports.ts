@@ -1,5 +1,8 @@
+import BasicMenuSnippet from "@/components/docs/code-preview-snippet";
 import CodePreviewSnippet from "@/components/docs/code-preview-snippet";
-import InstallationSnippet from "@/components/docs/installation-snippet";
+import Configuration from "@/components/docs/configuration";
+
+import Introduction from "@/components/docs/introduction";
 import Preview from "@/components/docs/preview";
 import { DocsSidebarNav } from "@/components/docs/side-bar";
 import CodePreviewSwitcher from "@/components/docs/tabs";
@@ -19,15 +22,17 @@ export {
   ModeToggle,
   Footer,
   DocsSidebarNav,
-  InstallationSnippet,
   CodePreviewSwitcher,
   CodePreviewSnippet,
   BasicMenu,
+  BasicMenuSnippet,
   Version,
   Canvas,
   CanvasLater,
   MobileNavbar,
   DropDown,
   Steps,
+  Introduction,
+  Configuration,
   Preview,
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import InstallationSnippet from "./installation-snippet";
+
 import { BasicMenu, CodePreviewSnippet, Preview } from "@/lib/exports";
 import { Code, Phone } from "../ui/icons";
 
