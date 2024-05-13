@@ -117,6 +117,21 @@
 
 /* consistents */
 
+/* typography */
+.p_text {
+  @apply text-sm text-slate-800 dark:text-slate-200 dark:text-opacity-50 lg:text-base text-opacity-75;
+}
+.h1_text_huge {
+  @apply text-3xl text-slate-800 dark:text-slate-200 tracking-tight lg:text-4xl font-semibold;
+}
+.h1_text_moderate {
+  @apply text-slate-800 dark:text-slate-300 font-semibold mb-1;
+}
+
+.h1_p_text_gap {
+  @apply flex flex-col gap-2;
+}
+
 .thin_border {
   @apply border border-gray-600 border-opacity-25;
 }
