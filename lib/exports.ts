@@ -1,12 +1,12 @@
-import BasicMenuSnippet from "@/components/docs/code-preview-snippet";
-import CodePreviewSnippet from "@/components/docs/code-preview-snippet";
-import Configuration from "@/components/docs/configuration";
+import BasicMenuSnippet from "@/app/(docs)/_components/docs/code-preview-snippet";
+import CodePreviewSnippet from "@/app/(docs)/_components/docs/code-preview-snippet";
+import Configuration from "@/app/(docs)/_components/docs/configuration";
 
-import Introduction from "@/components/docs/introduction";
-import Preview from "@/components/docs/preview";
-import { DocsSidebarNav } from "@/components/docs/side-bar";
-import CodePreviewSwitcher from "@/components/docs/tabs";
-import BasicMenu from "@/components/hamburgers/basic-menu";
+import Introduction from "@/app/(docs)/_components/docs/introduction";
+import Preview from "@/app/(docs)/_components/docs/preview";
+import { DocsSidebarNav } from "@/app/(docs)/_components/docs/side-bar";
+import CodePreviewSwitcher from "@/app/(docs)/_components/docs/tabs";
+import BasicMenu from "@/app/(docs)/_components/docs/hamburgers/basic-menu";
 import { Canvas } from "@/components/landing/canvas";
 import { CanvasLater } from "@/components/landing/canvas-later";
 import { Steps } from "@/components/landing/steps";

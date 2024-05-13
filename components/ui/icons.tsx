@@ -228,7 +228,7 @@ const CopyIcon = ({ className, ...rest }: any) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="text-white "
+      className="hover:rotate-12 transition-all 5s ease-in-out"
       {...rest}
     >
       <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />

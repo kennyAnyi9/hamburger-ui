@@ -1,16 +1,20 @@
 import { BasicMenu, DropDown, Version } from "@/lib/exports";
 import Link from "next/link";
 import React from "react";
-import { Badge } from "../ui/badge";
+import { Badge } from "../../../../components/ui/badge";
 
 import { ExternalLink } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../../../../components/ui/button";
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
-} from "../ui/hover-card";
-import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+} from "../../../../components/ui/hover-card";
+import {
+  Avatar,
+  AvatarFallback,
+  AvatarImage,
+} from "../../../../components/ui/avatar";
 import { docsConfig } from "@/lib/docs";
 
 export default function MobileNavbar() {

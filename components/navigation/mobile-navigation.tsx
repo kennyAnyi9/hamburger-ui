@@ -17,8 +17,8 @@ export default function MobileNavbar() {
   return (
     <header className="lg:hidden border-b h-16 flex justify-between items-center px-5">
       <section className="inline-flex my-auto">
-        <DropDown items={docsConfig.sidebarNav} />
-
+        {/* <DropDown items={docsConfig.sidebarNav} /> */}
+        <BasicMenu />
         <Version />
       </section>
       <section>

@@ -1,5 +1,5 @@
 import React from "react";
-import { CopyIcon } from "../ui/icons";
+import { CopyIcon } from "../../../../components/ui/icons";
 import { CodeSnippetProps } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -10,7 +10,7 @@ export const CodeSnippet: React.FC<CodeSnippetProps> = ({
   return (
     <div
       className={cn(
-        "rounded-md overflow-auto dark:bg-[#18181B] bg-[#18181B] thin_border p-4 w-[700px] inline-flex justify-between",
+        "rounded-md max-h-[500px] overflow-auto dark:bg-[#18181B] bg-[#18181B] thin_border p-4 w-[800px] inline-flex justify-between",
         className
       )}
     >
