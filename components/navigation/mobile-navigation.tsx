@@ -12,6 +12,9 @@ import {
 } from "../ui/hover-card";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
 import { docsConfig } from "@/lib/docs";
+import CanvasMenuRight from "@/app/(docs)/_components/hamburgers/canvas-menu-right";
+import CanvasMenuLeft from "@/app/(docs)/_components/hamburgers/canvas-menu-left";
+import DropDownMenu from "@/app/(docs)/_components/hamburgers/drop-down-menu";
 
 export default function MobileNavbar() {
   return (
@@ -19,6 +22,7 @@ export default function MobileNavbar() {
       <section className="inline-flex my-auto">
         {/* <DropDown items={docsConfig.sidebarNav} /> */}
         <BasicMenu />
+        {/* <DropDownMenu /> */}
         <Version />
       </section>
       <section>
