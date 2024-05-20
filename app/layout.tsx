@@ -8,6 +8,9 @@ import { fontSans } from "@/lib/fonts";
 export const metadata: Metadata = {
   title: "Hamburger UI",
   description: "A collection of pre-built, responsive mobile dropdown menus",
+  openGraph: {
+    title: "Hamburger UI",
+  },
 };
 
 export default function RootLayout({

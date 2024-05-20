@@ -137,7 +137,7 @@
 }
 
 .hero_description {
-  @apply text-sm md:text-lg text-gray-600 font-normal;
+  @apply text-sm md:text-xl text-gray-600 font-normal;
 }
 
 .button_class_default {

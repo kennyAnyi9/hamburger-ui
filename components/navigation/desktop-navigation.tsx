@@ -11,6 +11,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import Link from "next/link";
+import Search from "../landing/search";
 
 export default function DesktopNavigation() {
   return (
@@ -38,6 +39,7 @@ export default function DesktopNavigation() {
         </div>
       </section>
       <section className="flex justify-center items-center my-auto">
+        <Search />
         <ModeToggle />
         <HoverCard>
           <HoverCardTrigger asChild>
